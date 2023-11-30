@@ -10,6 +10,12 @@ export default class LoginScreen extends Component {
               source={require("../assets/fone.jpg")}
               style={styles.IMAGEMDOFONI}>
             </Image>
+            <TouchableOpacity style={styles.button}>
+                <Text> Log in</Text>
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Text style={styles.textinutil}> Precisa de uma conta? </Text>
+            </TouchableOpacity>
            </View> 
         )
     }
@@ -24,11 +30,19 @@ const styles = StyleSheet.create({
 
     textinutil: {
         color: "white",
-        fontSize: 22
+        fontSize: 18
     },
 
     IMAGEMDOFONI: {
         width: 171,
         height: 159,
-    }
+    },
+    
+    button: {
+        backgroundColor: "white",
+        alignItems: "center",
+        justifyContent: "center",
+        width: 200,
+        height: 40
+    }, 
 })
