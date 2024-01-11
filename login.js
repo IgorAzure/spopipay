@@ -10,7 +10,7 @@ export default class LoginScreen extends Component {
               source={require("../assets/fone.jpg")}
               style={styles.IMAGEMDOFONI}>
             </Image>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity onPress={() => {this.props.navigation.replace("Home")}} style={styles.button}>
                 <Text> Log in</Text>
             </TouchableOpacity>
             <TouchableOpacity>
